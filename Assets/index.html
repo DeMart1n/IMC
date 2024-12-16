@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcule seu IMC</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <section class="tabelaDeReferencia">
+            <h1 class="CalculadoraIMC">🤫Calculadora de IMC😬</h1>
+            <section class="ContainerListas">
+                <div class="row">
+                    <div class="colunaComLista">
+                        <h2 class="Coluna">IMC</h2>
+                        <ul class="ListaDeIMC">
+                            <li class="magro">Menos do que 18,5</li>
+                            <li class="normal">Entre 18,5 e 24,9</li>
+                            <li class="sobrepeso">Entre 25 e 29,9</li>
+                            <li class="obesidade1">Entre 30 e 34,9</li>
+                            <li class="obesidade2">Entre 35 e 39,9</li>
+                            <li class="obesidade3">Mais do que 40</li>
+                        </ul>
+                    </div>
+                    <div class="colunaComLista">
+                        <h2 class="Coluna">Classificação de Peso</h2>
+                        <ul class="TabelaDeObesidade">
+                            <li class="magro">Abaixo do peso</li>
+                            <li class="normal">Peso normal</li>
+                            <li class="sobrepeso">Sobrepeso</li>
+                            <li class="obesidade1">Obesidade Grau 1</li>
+                            <li class="obesidade2">Obesidade Grau 2</li>
+                            <li class="obesidade3">Obesidade Grau 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <form action="/" id="formulario" method="POST">
+            <label for="peso" class="peso">Peso</label>
+            <input type="text" id="peso" name="peso">
+            <label for="altura" class="altura">Altura</label>
+            <input type="text" id="altura" name="altura">
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="resultado"></div>
+    </section>
+<script src="./js/main.js"></script>
+</body>
+</html>
